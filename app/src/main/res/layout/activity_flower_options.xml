@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flower_bg"
+    tools:context=".FlowerOptions">
+
+    <ImageButton
+        android:id="@+id/imageButtonTulip"
+        android:layout_width="170dp"
+        android:layout_height="212dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonCam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonCam"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonCam"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tulip_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCam"
+        android:layout_width="170dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="395dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camellia_icon" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDaisy"
+        android:layout_width="170dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="113dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/daisy_icon" />
+
+    <TextView
+        android:id="@+id/flowerDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="149dp"
+        android:fontFamily="@font/alef"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#A1661F"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonDaisy" />
+
+    <Button
+        android:id="@+id/flowerNextButton"
+        android:layout_width="101dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#D8705A"
+        android:fontFamily="@font/alef"
+        android:text="NEXT"
+        android:textAllCaps="true"
+        android:textColor="#FBE3C6"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowerDesc" />
+
+    <ImageButton
+        android:id="@+id/instrucButton2"
+        android:layout_width="63dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/instruc_darkicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

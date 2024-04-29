@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEDED"
+    tools:context=".PopupActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alef"
+        android:text="Instructions:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#E98746"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="381dp"
+        android:layout_height="312dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alef"
+        android:text="
+1. Click the 'START' button to get started.\n
+\n
+2. Then, pick a flower from\nthe current selection.\n
+\n
+3. Next, pick a container for the flower!\n
+\n
+4. Check out the facts and other info ♡\n
+\n
+5. You can repeat the process\nby clicking on 'CREATE ANOTHER'.\n
+\n
+6. Confused? Click on the 'i' button\nfor these same instructions.\n"
+        android:textAlignment="center"
+        android:textColor="#BC543F"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="355dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alef"
+        android:text="THANKS FOR READING LOVE :D"
+        android:textAlignment="center"
+        android:textColor="#d1978b"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#E38C79"
+        android:fontFamily="@font/alef"
+        android:text="CLOSE POPUP"
+        android:textAlignment="center"
+        android:textColor="#FDE5E2"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="384dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alef"
+        android:text="Learn more about the app by clicking\nthe home screen logo."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#8F8A67"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/closeButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

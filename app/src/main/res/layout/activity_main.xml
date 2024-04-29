@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen_bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#D8705A"
+        android:fontFamily="@font/alef"
+        android:text="START!"
+        android:textAlignment="center"
+        android:textColor="#FBE3C6"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoButton" />
+
+    <Button
+        android:id="@+id/instrucButton"
+        android:layout_width="178dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="184dp"
+        android:backgroundTint="#E38C79"
+        android:fontFamily="@font/alef"
+        android:text="INSTRUCTIONS"
+        android:textAllCaps="true"
+        android:textColor="#B8493A"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/logoButton"
+        android:layout_width="280dp"
+        android:layout_height="267dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344"
+        app:srcCompat="@drawable/bloomintime_logosmaller" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
